@@ -1,26 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
+import Game from './components/Game';
 import './App.css';
 
-function App() {
+
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <h1>Game 2048</h1>
+    <h2>How to play:</h2>
+    <p>Slide numbered tiles on the grid using arrow keys or buttons to combine them to create a tile with the number 2048.</p>
+    <Game/>
     </div>
   );
-}
-
+};
 export default App;
